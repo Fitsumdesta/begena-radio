@@ -1,0 +1,955 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Begena Radio — Ethiopian Gospel</title>
+<meta name="theme-color" content="#16120E" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#F3EAD8" media="(prefers-color-scheme: light)">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Begena">
+<link rel="canonical" href="https://begena.fm/">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/svg+xml" href="assets/begena-logo.svg">
+<link rel="icon" type="image/png" sizes="512x512" href="assets/icon-512.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://begena.fm/">
+<meta property="og:title" content="Begena Radio — ቤግና ሬዲዮ">
+<meta property="og:description" content="24/7 Ethiopian Pentecostal gospel for the Habesha diaspora in the DMV.">
+<meta property="og:image" content="https://begena.fm/assets/icon-1200.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+
+<!-- Fonts: display serif + Ethiopic serif + UI sans. Streaming needs a network anyway. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Noto+Serif+Ethiopic:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg-0:#16120E; --bg-1:#241b2e; --bg-2:#1b1812;
+  --ink:#F3EAD8; --ink-soft:#C9BBA0; --ink-mute:#8A7E6B;
+  --gold:#E3C16F; --gold-deep:#C9A24B; --ember:#C2502E;
+  --card:rgba(243,234,216,.04); --line:rgba(227,193,111,.18);
+  --halo:rgba(227,193,111,.55);
+  --display:'Fraunces',Georgia,serif;
+  --eth:'Noto Serif Ethiopic',serif;
+  --ui:'Inter',system-ui,-apple-system,sans-serif;
+}
+html[data-theme="light"]{
+  --bg-0:#F3EAD8; --bg-1:#EADCC0; --bg-2:#F6EEDD;
+  --ink:#2A211A; --ink-soft:#5A4B38; --ink-mute:#8A7A60;
+  --card:rgba(42,33,26,.04); --line:rgba(154,123,46,.28);
+  --halo:rgba(201,162,75,.40);
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;height:100%}
+body{
+  font-family:var(--ui); color:var(--ink); background:var(--bg-0);
+  background-image:
+    radial-gradient(120% 80% at 50% -10%, var(--bg-1) 0%, transparent 55%),
+    radial-gradient(90% 60% at 50% 120%, var(--bg-2) 0%, transparent 50%);
+  background-attachment:fixed;
+  min-height:100dvh; display:flex; flex-direction:column;
+  padding:env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+  transition:background-color .5s ease, color .3s ease;
+}
+:lang(am),.am{font-family:var(--eth)}
+
+/* ---- top bar ---- */
+.topbar{
+  display:flex; align-items:center; gap:12px;
+  padding:18px 20px 6px; max-width:520px; width:100%; margin:0 auto;
+}
+.mark{width:40px;height:40px;flex:0 0 auto;border-radius:50%;object-fit:cover;box-shadow:0 0 0 1.5px var(--gold-deep), 0 4px 12px -5px rgba(0,0,0,.6)}
+.wordmark{display:flex;flex-direction:column;line-height:1.05;margin-right:auto}
+.wordmark b{font-family:var(--display);font-weight:600;font-size:18px;letter-spacing:.2px}
+.wordmark span{font-size:11px;color:var(--ink-mute);letter-spacing:.14em;text-transform:uppercase;margin-top:2px}
+.iconbtn{
+  appearance:none;border:1px solid var(--line);background:var(--card);color:var(--ink-soft);
+  height:38px;min-width:38px;padding:0 11px;border-radius:11px;font-family:var(--ui);
+  font-size:13px;font-weight:600;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;
+  transition:border-color .2s,color .2s,background .2s;
+}
+.iconbtn:hover{border-color:var(--gold-deep);color:var(--gold)}
+.iconbtn:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+
+/* ---- stage ---- */
+.stage{
+  flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center;
+  width:100%; max-width:520px; margin:0 auto; padding:8px 24px 24px; text-align:center;
+}
+.live{
+  display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:600;
+  letter-spacing:.16em;text-transform:uppercase;color:var(--ink-mute);margin-bottom:26px;
+}
+.live .dot{width:8px;height:8px;border-radius:50%;background:var(--ink-mute);transition:background .3s}
+body.is-playing .live .dot{background:var(--ember);box-shadow:0 0 0 0 rgba(194,80,46,.6);animation:pulse 2.4s ease-out infinite}
+body.is-playing .live{color:var(--ember)}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(194,80,46,.55)}70%{box-shadow:0 0 0 9px rgba(194,80,46,0)}100%{box-shadow:0 0 0 0 rgba(194,80,46,0)}}
+
+/* ---- artwork + breathing halo (signature) ---- */
+.art-wrap{position:relative;width:min(74vw,300px);aspect-ratio:1;margin-bottom:30px}
+.halo{
+  position:absolute;inset:-26%;border-radius:50%;z-index:0;
+  background:radial-gradient(circle at 50% 50%, var(--halo) 0%, transparent 62%);
+  opacity:.35;transform:scale(.92);transition:opacity .6s ease;
+}
+body.is-playing .halo{animation:breathe 5.4s ease-in-out infinite}
+@keyframes breathe{0%,100%{opacity:.30;transform:scale(.90)}50%{opacity:.85;transform:scale(1.06)}}
+.art{
+  position:relative;z-index:1;width:100%;height:100%;border-radius:18px;overflow:hidden;
+  background:linear-gradient(160deg,#2a2230,#171219);
+  box-shadow:0 18px 50px -18px rgba(0,0,0,.7), inset 0 0 0 1px var(--line);
+  display:flex;align-items:center;justify-content:center;
+}
+html[data-theme="light"] .art{background:linear-gradient(160deg,#efe2c6,#e3d2ac)}
+.art img{width:100%;height:100%;object-fit:cover;display:block}
+.art .logoart{width:86%;height:86%;object-fit:contain;filter:drop-shadow(0 8px 22px rgba(0,0,0,.55))}
+.art .cross{width:48%;height:48%;color:var(--gold);opacity:.8}
+
+/* ---- now playing text ---- */
+.np-title{
+  font-family:var(--display);font-weight:500;font-size:25px;line-height:1.25;
+  margin:0 0 6px;letter-spacing:.1px;min-height:1.2em;
+}
+.np-title.am{font-family:var(--eth);font-weight:500}
+.np-artist{font-size:15px;color:var(--ink-soft);margin:0 0 4px;min-height:1.1em}
+.np-album{font-size:12.5px;color:var(--ink-mute);margin:0;letter-spacing:.02em}
+
+/* ---- progress ---- */
+.bar{width:100%;max-width:340px;height:4px;border-radius:99px;background:var(--card);margin:24px auto 8px;overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--gold-deep),var(--gold));border-radius:99px;transition:width 1s linear}
+.times{display:flex;justify-content:space-between;max-width:340px;margin:0 auto;font-size:11px;color:var(--ink-mute);font-variant-numeric:tabular-nums}
+
+/* ---- play button ---- */
+.controls{display:flex;align-items:center;justify-content:center;gap:22px;margin:30px 0 6px}
+.play{
+  appearance:none;border:none;cursor:pointer;width:78px;height:78px;border-radius:50%;
+  background:radial-gradient(circle at 35% 30%, #f6d98a, var(--gold-deep));
+  color:#241a06;display:flex;align-items:center;justify-content:center;
+  box-shadow:0 12px 30px -8px rgba(227,193,111,.55), inset 0 1px 0 rgba(255,255,255,.4);
+  transition:transform .15s ease, box-shadow .3s;
+}
+.play:hover{transform:scale(1.05)}
+.play:active{transform:scale(.97)}
+.play:focus-visible{outline:3px solid var(--gold);outline-offset:4px}
+.playwrap{position:relative;display:grid;place-items:center}
+.wave{position:absolute;left:50%;top:50%;width:190px;height:190px;transform:translate(-50%,-50%);pointer-events:none;z-index:0}
+.play{position:relative;z-index:1}
+.play svg{width:32px;height:32px;margin-left:2px}
+.play.is-pause svg{margin-left:0}
+.play.loading{pointer-events:none}
+.play.loading svg{display:none}
+.play .spin{display:none;width:26px;height:26px;border:3px solid rgba(36,26,6,.25);border-top-color:#241a06;border-radius:50%;animation:spin .8s linear infinite}
+.play.loading .spin{display:block}
+@keyframes spin{to{transform:rotate(360deg)}}
+.vol{display:flex;align-items:center;gap:8px;width:120px;color:var(--ink-mute)}
+.vol input{width:100%;accent-color:var(--gold-deep);height:4px}
+
+.listeners{margin-top:20px;font-size:12px;color:var(--ink-mute);letter-spacing:.04em}
+.listeners b{color:var(--ink-soft);font-weight:600}
+
+/* ---- recently played ---- */
+.recent{width:100%;max-width:520px;margin:8px auto 0;padding:18px 24px 30px}
+.recent h2{
+  font-size:11px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--ink-mute);margin:0 0 12px;display:flex;align-items:center;gap:10px;
+}
+.recent h2::after{content:"";flex:1;height:1px;background:var(--line)}
+.recent ul{list-style:none;margin:0;padding:0}
+.recent li{display:flex;gap:12px;align-items:center;padding:9px 0;border-bottom:1px solid var(--line)}
+.recent li:last-child{border-bottom:none}
+.recent .rt{width:30px;height:30px;border-radius:7px;flex:0 0 auto;object-fit:cover;background:var(--card);display:flex;align-items:center;justify-content:center;color:var(--gold);opacity:.9}
+.recent .rt svg{width:16px;height:16px}
+.recent .meta{min-width:0}
+.recent .meta .t{font-size:13.5px;color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.recent .meta .a{font-size:11.5px;color:var(--ink-mute);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+/* ---- panel tabs + schedule ---- */
+.tabs{display:flex;gap:6px;margin:0 0 16px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:4px}
+.tab{flex:1;border:none;background:transparent;color:var(--ink-mute);font:inherit;font-size:11.5px;font-weight:600;letter-spacing:.02em;white-space:nowrap;padding:9px 4px;border-radius:9px;cursor:pointer;transition:background .2s,color .2s}
+.tab.active{background:var(--gold);color:#1a1206}
+.view{animation:fadeup .25s ease}
+@keyframes fadeup{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+.empty{color:var(--ink-mute);font-size:13px;text-align:center;padding:20px 8px;line-height:1.55}
+.tz-note{font-size:11.5px;color:var(--ink-mute);margin:0 0 14px;display:flex;align-items:center;gap:6px}
+.tz-note svg{width:13px;height:13px;flex:0 0 auto;opacity:.85}
+.sched-day{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--ink);opacity:.8;margin:16px 0 2px}
+.sched-day:first-child{margin-top:0}
+.sched{display:flex;gap:14px;align-items:baseline;padding:9px 0;border-bottom:1px solid var(--line)}
+.sched:last-child{border-bottom:none}
+.sched .when{flex:0 0 auto;width:74px;font-size:12.5px;color:var(--gold);font-variant-numeric:tabular-nums}
+.sched .what{min-width:0}
+.sched .what .n{font-size:13.5px;color:var(--ink)}
+.sched .what .d{font-size:11.5px;color:var(--ink-mute);margin-top:1px}
+.sched.now .when{color:var(--ink);font-weight:600}
+.badge{display:inline-block;font-size:9px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#1a1206;background:var(--gold);padding:1px 6px;border-radius:6px;margin-left:7px;vertical-align:middle}
+
+.footer{max-width:520px;margin:0 auto;padding:4px 24px calc(26px + env(safe-area-inset-bottom));text-align:center}
+.footer .tag{font-family:var(--display);font-style:italic;font-size:14px;color:var(--ink-soft)}
+.footer .tag.am{font-family:var(--eth);font-style:normal}
+.footer .sub{font-size:11px;color:var(--ink-mute);margin-top:6px}
+
+.notice{
+  max-width:340px;margin:14px auto 0;font-size:12px;line-height:1.5;color:var(--ink-mute);
+  background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 14px;
+}
+.notice code{color:var(--gold);font-size:11px}
+/* ---- verse of the day ---- */
+.verse{width:100%;max-width:520px;margin:18px auto 0;padding:0 24px}
+.verse-inner{position:relative;border:1px solid var(--line);background:var(--card);border-radius:16px;padding:20px 22px;text-align:center;overflow:hidden}
+.verse-inner::before{content:"";position:absolute;top:0;bottom:0;left:0;width:3px;background:linear-gradient(var(--gold),var(--gold-deep))}
+.verse-head{font-size:10.5px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:11px;display:flex;align-items:center;justify-content:center;gap:8px}
+.verse-head svg{width:13px;height:13px}
+.verse-text{font-family:var(--display);font-size:17px;font-style:italic;line-height:1.5;color:var(--ink);margin:0}
+.verse-text.am{font-style:normal;font-size:16.5px;line-height:1.7}
+.verse-ref{margin-top:11px;font-size:12px;letter-spacing:.04em;color:var(--gold-deep)}
+/* ---- prayer + giving ---- */
+.tab-intro{font-size:13.5px;line-height:1.55;color:var(--ink-mute);margin:0 0 14px;text-align:center}
+.field{width:100%;box-sizing:border-box;background:var(--card);border:1px solid var(--line);border-radius:10px;color:var(--ink);font-family:var(--ui);font-size:14px;padding:11px 12px;margin-bottom:10px}
+.field::placeholder{color:var(--ink-mute)}
+.field:focus{outline:none;border-color:var(--gold)}
+textarea.field{min-height:96px;resize:vertical;line-height:1.5}
+.pray-anon{display:flex;align-items:center;gap:8px;font-size:12.5px;color:var(--ink-mute);margin:-1px 0 13px;cursor:pointer}
+.pray-anon input{accent-color:var(--gold-deep);width:15px;height:15px}
+.give-btn{width:100%;border:none;cursor:pointer;background:linear-gradient(135deg,#f6d98a,var(--gold-deep));color:#241a06;font-family:var(--ui);font-weight:700;font-size:14px;letter-spacing:.02em;padding:13px;border-radius:11px;transition:transform .15s,box-shadow .3s;box-shadow:0 8px 22px -10px rgba(227,193,111,.7)}
+.give-btn:hover{transform:translateY(-1px)}
+.give-btn:active{transform:translateY(0)}
+.give-btn:disabled{opacity:.55;cursor:default;transform:none}
+.form-msg{font-size:13px;margin-top:12px;text-align:center;min-height:18px;line-height:1.45;color:var(--ink-mute)}
+.form-msg.ok{color:var(--gold)}
+.give-head{font-family:var(--display);font-size:20px;color:var(--ink);text-align:center;margin-bottom:9px}
+.give-amounts{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}
+.chip{flex:1 1 56px;text-align:center;border:1px solid var(--line);background:transparent;color:var(--ink);font-family:var(--ui);font-size:14px;font-weight:600;padding:11px 4px;border-radius:10px;cursor:pointer;transition:background .15s,color .15s,border-color .15s}
+.chip:hover{border-color:var(--gold-deep)}
+.chip.sel{background:var(--gold);color:#241a06;border-color:var(--gold)}
+.give-note{font-size:11px;color:var(--ink-mute);text-align:center;margin-top:11px;line-height:1.5}
+/* ---- weekly schedule drawer ---- */
+body.cal-open{overflow:hidden}
+.cal-scrim{position:fixed;inset:0;background:rgba(8,6,4,.6);opacity:0;visibility:hidden;transition:opacity .3s,visibility .3s;z-index:40}
+body.cal-open .cal-scrim{opacity:1;visibility:visible}
+.cal-drawer{position:fixed;top:0;right:0;height:100dvh;width:min(440px,94vw);background:var(--bg-2);
+  border-left:1px solid var(--line);box-shadow:-24px 0 60px -30px rgba(0,0,0,.8);
+  transform:translateX(100%);transition:transform .34s cubic-bezier(.4,0,.2,1);z-index:50;display:flex;flex-direction:column}
+body.cal-open .cal-drawer{transform:translateX(0)}
+.cal-head{display:flex;align-items:center;gap:10px;padding:18px 18px 14px;border-bottom:1px solid var(--line)}
+.cal-head .ct{margin-right:auto;line-height:1.15}
+.cal-head .ct b{font-family:var(--display);font-weight:600;font-size:19px;display:block}
+.cal-head .ct small{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);font-weight:600}
+.cal-close{appearance:none;border:1px solid var(--line);background:var(--card);color:var(--ink-soft);width:34px;height:34px;border-radius:10px;cursor:pointer;font-size:16px;line-height:1;display:flex;align-items:center;justify-content:center}
+.cal-close:hover{border-color:var(--gold-deep);color:var(--gold)}
+.cal-tznote{font-size:11px;color:var(--ink-mute);padding:11px 18px 0;display:flex;gap:6px;align-items:center}
+.cal-tznote svg{width:12px;height:12px;opacity:.8;flex:0 0 auto}
+.cal-body{overflow-y:auto;padding:4px 0 34px;flex:1;-webkit-overflow-scrolling:touch}
+.cal-day{padding:14px 18px 6px}
+.cal-day+.cal-day{border-top:1px solid var(--line)}
+.cal-dh{display:flex;align-items:baseline;gap:8px;margin-bottom:7px;flex-wrap:wrap}
+.cal-dh .dn{font-family:var(--display);font-weight:600;font-size:17px}
+.cal-dh .dn .am{font-size:13.5px;color:var(--ink-soft);font-weight:500;margin-left:6px}
+.cal-dh .dt{margin-left:auto;font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold-deep)}
+.cal-day.feast .dn{color:var(--gold)}
+.cal-badge{font-size:8.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:2px 7px;border-radius:999px}
+.cal-badge.vigil{color:#8FA0C9;border:1px solid rgba(143,160,201,.5)}
+.cal-badge.feast{color:#1a1206;background:var(--gold)}
+.cal-badge.service{color:var(--gold);border:1px solid var(--gold-deep)}
+.cal-row{display:grid;grid-template-columns:60px 1fr;gap:10px;padding:7px 8px;margin:0 -8px;border-left:2px solid transparent;border-radius:0 8px 8px 0}
+.cal-row .rt{font-size:10.5px;color:var(--ink-mute);font-variant-numeric:tabular-nums;padding-top:2px;letter-spacing:.02em}
+.cal-row .rp{font-family:var(--display);font-size:14px;color:var(--ink);line-height:1.25}
+.cal-row .rp .am{display:block;font-family:var(--eth);font-size:12px;color:var(--ink-soft);margin-top:1px}
+.cal-row .rd{font-size:11px;color:var(--ink-mute);margin-top:3px;line-height:1.45}
+.cal-row.on-air{border-left-color:var(--ember);background:linear-gradient(90deg,rgba(194,80,46,.08),transparent 70%)}
+.cal-row .live{display:none}
+.cal-row.on-air .live{display:inline-flex;align-items:center;gap:5px;margin-left:7px;font-family:var(--ui);font-size:8.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--ember);vertical-align:middle}
+.cal-row.on-air .live::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--ember);animation:pulse 2s ease-out infinite}
+.cal-day.today .dt::after{content:" · Today";color:var(--ember)}
+@media (prefers-reduced-motion: reduce){.cal-scrim,.cal-drawer{transition:none}
+
+  *{animation:none!important;transition:none!important}
+}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <img class="mark" id="brandLogo" alt="Begena lyre logo">
+  <div class="wordmark">
+    <b data-en="Begena Radio" data-am="በገና ሬዲዮ">Begena Radio</b>
+    <span data-en="Ethiopian Gospel · DMV" data-am="የኢትዮጵያ መንፈሳዊ · DMV">Ethiopian Gospel · DMV</span>
+  </div>
+  <button class="iconbtn" id="calBtn" aria-label="This week’s schedule" title="This week">
+    <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="16" rx="2.5"/><path d="M3 9h18M8 2.5v4M16 2.5v4"/></svg>
+  </button>
+  <button class="iconbtn" id="langBtn" aria-label="Switch language">አማ</button>
+  <button class="iconbtn" id="themeBtn" aria-label="Toggle theme" onclick="toggleTheme()">☾</button>
+</header>
+
+<main class="stage">
+  <div class="live">
+    <span class="dot"></span>
+    <span id="liveLabel" data-en="Off air" data-am="ዝግ ነው">Off air</span>
+  </div>
+
+  <div class="art-wrap">
+    <div class="halo"></div>
+    <div class="art" id="art"></div>
+  </div>
+
+  <h1 class="np-title" id="title" data-en="Press play to listen" data-am="ለማዳመጥ ይጫኑ">Press play to listen</h1>
+  <p class="np-artist" id="artist"></p>
+  <p class="np-album" id="album"></p>
+
+  <div class="bar" id="barWrap" hidden><i id="barFill"></i></div>
+  <div class="times" id="times" hidden><span id="tElapsed">0:00</span><span id="tDur">0:00</span></div>
+
+  <div class="controls">
+    <div class="playwrap">
+      <canvas class="wave" id="waveCanvas" aria-hidden="true"></canvas>
+      <button class="play" id="playBtn" aria-label="Play">
+        <span class="spin"></span>
+        <svg id="playIcon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="vol">
+    <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M5 9v6h4l5 5V4L9 9H5z"/></svg>
+    <input type="range" id="vol" min="0" max="1" step="0.01" value="0.5" aria-label="Volume">
+  </div>
+
+  <div class="listeners" id="listeners" hidden>
+    <b id="listenCount">0</b> <span data-en="listening now" data-am="አሁን እያዳመጡ ነው">listening now</span>
+  </div>
+
+  <div class="notice" id="setupNotice" hidden>
+    <span data-en="Demo mode — sample songs shown." data-am="የናሙና ሁነታ — የናሙና ዘፈኖች እየታዩ ነው።">Demo mode — sample songs shown.</span>
+    <span data-en="Set" data-am="ያስቀምጡ">Set</span> <code>AZURACAST</code>
+    <span data-en="below to go live." data-am="ከታች ቀጥታ ለመጀመር።">below to go live.</span>
+  </div>
+</main>
+
+<section class="verse">
+  <div class="verse-inner">
+    <div class="verse-head">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 3v18M7 8h10"/></svg>
+      <span data-en="Verse of the Day" data-am="የዕለቱ ቃል">Verse of the Day</span>
+    </div>
+    <p class="verse-text" id="verseText"></p>
+    <div class="verse-ref" id="verseRef"></div>
+  </div>
+</section>
+
+<section class="recent" id="panel">
+  <div class="tabs" role="tablist">
+    <button class="tab active" id="tabUpnext" data-en="Up Next" data-am="ቀጥሎ">Up Next</button>
+    <button class="tab" id="tabSchedule" data-en="Schedule" data-am="ሰሌዳ">Schedule</button>
+    <button class="tab" id="tabPray" data-en="Pray" data-am="ጸሎት">Pray</button>
+    <button class="tab" id="tabGive" data-en="Bless" data-am="ባርኩ">Bless</button>
+  </div>
+  <div class="view" id="upnextView">
+    <ul id="upnextList"></ul>
+  </div>
+  <div class="view" id="scheduleView" hidden>
+    <div class="tz-note">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+      <span><span data-en="Times shown in your local time" data-am="ሰዓቶች በእርስዎ የአካባቢ ሰዓት ይታያሉ">Times shown in your local time</span> · <span id="tzName"></span></span>
+    </div>
+    <div id="scheduleList"></div>
+  </div>
+  <div class="view" id="prayView" hidden>
+    <p class="tab-intro" data-en="It would be our honor to pray with you. Share what is on your heart." data-am="ከእርስዎ ጋር መጸለይ ለእኛ ክብር ነው። በልብዎ ያለውን ያካፍሉን።">It would be our honor to pray with you. Share what is on your heart.</p>
+    <input class="field" id="prayName" data-en-ph="Your name (optional)" data-am-ph="ስምዎ (አማራጭ)" autocomplete="name">
+    <textarea class="field" id="prayText" data-en-ph="Your prayer request…" data-am-ph="የጸሎት ጥያቄዎ…"></textarea>
+    <label class="pray-anon"><input type="checkbox" id="prayAnon"> <span data-en="Keep my request private" data-am="ጥያቄዬ በሚስጥር ይቆይ">Keep my request private</span></label>
+    <button class="give-btn" id="praySend" data-en="Send prayer request" data-am="የጸሎት ጥያቄ ይላኩ">Send prayer request</button>
+    <div class="form-msg" id="prayMsg"></div>
+  </div>
+  <div class="view" id="giveView" hidden>
+    <div class="give-head" data-en="Bless This Ministry" data-am="ይህን አገልግሎት ይባርኩ">Bless This Ministry</div>
+    <p class="tab-intro" data-en="Begena Radio is free and listener-supported. Your gift keeps the worship playing day and night." data-am="በገና ሬዲዮ ነጻ ሲሆን በአድማጮች ይደገፋል። ስጦታዎ ምስጋናው ቀንና ሌሊት እንዲቀጥል ያደርጋል።">Begena Radio is free and listener-supported. Your gift keeps the worship playing day and night.</p>
+    <div class="give-amounts" id="giveAmounts"></div>
+    <button class="give-btn" id="giveBtn" data-en="Give with love" data-am="በፍቅር ይስጡ">Give with love</button>
+    <div class="form-msg" id="giveMsg"></div>
+    <div class="give-note" data-en="You will be taken to our secure giving page." data-am="ወደ ደህንነቱ የተጠበቀ የልገሳ ገጽ ይወሰዳሉ።">You will be taken to our secure giving page.</div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="tag" id="tagline" data-en="“Make a joyful noise unto the Lord.”" data-am="“ለእግዚአብሔር በደስታ እልል በሉ።”">“Make a joyful noise unto the Lord.”</div>
+  <div class="sub" data-en="24/7 worship for the Habesha community" data-am="ለሐበሻ ማኅበረሰብ 24/7 መንፈሳዊ ዝማሬ">24/7 worship for the Habesha community</div>
+</footer>
+
+<audio id="audio" preload="none" crossorigin="anonymous"></audio>
+
+<div class="cal-scrim" id="calScrim"></div>
+<aside class="cal-drawer" id="calDrawer" aria-hidden="true" aria-label="This week’s schedule">
+  <div class="cal-head">
+    <span class="ct"><small data-en="This Week" data-am="የሳምንቱ">This Week</small><b data-en="Broadcast Schedule" data-am="የስርጭት መርሐ ግብር">Broadcast Schedule</b></span>
+    <button class="cal-close" id="calClose" aria-label="Close">✕</button>
+  </div>
+  <div class="cal-tznote">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+    <span data-en="Times in U.S. Eastern (DMV)" data-am="ሰዓቶች በአሜሪካ ምስራቃዊ (DMV)">Times in U.S. Eastern (DMV)</span>
+  </div>
+  <div class="cal-body" id="calBody"></div>
+</aside>
+<script>
+/* ===================================================================
+   CONFIG — point this at your AzuraCast install, then host this file.
+   Find these in AzuraCast: station "Profile" page shows the shortcode
+   and the public stream URL.
+   =================================================================== */
+const CONFIG = {
+  // Your AzuraCast base URL, no trailing slash. e.g. "https://radio.begena.fm"
+  AZURACAST: "https://radio.begena.fm",
+  // The station's URL stem / shortcode, e.g. "begena" or "ethiopian_gospel"
+  STATION: "begena",
+  // Optional: hard-code the stream URL. If blank, we use AzuraCast's listen_url.
+  STREAM_URL: "",
+  POLL_MS: 15000,
+
+  // ----- Prayer & Giving (all optional) -----
+  // If PRAYER_ENDPOINT is set we POST the request there; otherwise we open the
+  // listener's email app addressed to PRAYER_EMAIL.
+  PRAYER_EMAIL: "",        // e.g. "prayer@begena.fm"
+  PRAYER_ENDPOINT: "",     // optional POST URL (e.g. a Formspree form)
+  // Your donation page: PayPal.me, Donorbox, GoFundMe, Stripe Payment Link, Zeffy, etc.
+  DONATE_URL: ""           // e.g. "https://www.paypal.com/donate/?hosted_button_id=XXXX"
+};
+const DEMO = CONFIG.AZURACAST.includes("your-azuracast-domain");
+
+/* ---- brand logo (inline begena lyre, SVG) ---- */
+const LOGO = "data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxkZWZzPgogICAgPHJhZGlhbEdyYWRpZW50IGlkPSJiZyIgY3g9IjUwJSIgY3k9IjQyJSIgcj0iNzIlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgIHN0b3AtY29sb3I9IiMyNDFkM2QiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSI1NSUiIHN0b3AtY29sb3I9IiMxNjExMjciLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMGMwOTE3Ii8+CiAgICA8L3JhZGlhbEdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJ3b29kIiB4MT0iMCIgeTE9IjAiIHgyPSIwIiB5Mj0iMSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiICBzdG9wLWNvbG9yPSIjRTlDQzg1Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI0I5OEYzRSIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0icmluZ2ciIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgIHN0b3AtY29sb3I9IiNGMkREQTAiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiNDOUEyNEIiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjOEE2QTJCIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KPGNpcmNsZSBjeD0iMjU2IiBjeT0iMjU2IiByPSIyNDgiIGZpbGw9InVybCgjYmcpIi8+CjxnIGZpbGw9Im5vbmUiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCI+CjxwYXRoIGQ9Ik0gMTc2IDMzMCBMIDMzNiAzMzAgTCAzNTggNDA0IFEgMzYwIDQxMiAzNTIgNDEyIEwgMTYwIDQxMiBRIDE1MiA0MTIgMTU0IDQwNCBaIiBmaWxsPSJ1cmwoI3dvb2QpIiBzdHJva2U9IiNFM0MxNkYiIHN0cm9rZS13aWR0aD0iNiIvPgo8cGF0aCBkPSJNIDE4MiAzNDQgTCAzMzAgMzQ0IiBzdHJva2U9IiNBODdFMzMiIHN0cm9rZS13aWR0aD0iMyIgb3BhY2l0eT0iMC41NSIvPgo8Y2lyY2xlIGN4PSIyMTIiIGN5PSIzNzgiIHI9IjkiIGZpbGw9IiMwYzA5MTciIHN0cm9rZT0iI0M5QTI0QiIgc3Ryb2tlLXdpZHRoPSIzLjUiLz4KPGNpcmNsZSBjeD0iMzAwIiBjeT0iMzc4IiByPSI5IiBmaWxsPSIjMGMwOTE3IiBzdHJva2U9IiNDOUEyNEIiIHN0cm9rZS13aWR0aD0iMy41Ii8+CjxwYXRoIGQ9Ik0gMTcwIDMzMiBMIDE5NiAzMzIgTCAxNzYgMTY4IEwgMTQ2IDE2NiBaIiBmaWxsPSJ1cmwoI3dvb2QpIiBzdHJva2U9IiNFM0MxNkYiIHN0cm9rZS13aWR0aD0iNiIvPgo8cGF0aCBkPSJNIDMxNiAzMzIgTCAzNDIgMzMyIEwgMzY2IDE2NiBMIDMzNiAxNjggWiIgZmlsbD0idXJsKCN3b29kKSIgc3Ryb2tlPSIjRTNDMTZGIiBzdHJva2Utd2lkdGg9IjYiLz4KPHJlY3QgeD0iMTMwIiB5PSIxNTAiIHdpZHRoPSIyNTIiIGhlaWdodD0iMzAiIHJ4PSIxNSIgZmlsbD0idXJsKCN3b29kKSIgc3Ryb2tlPSIjRTNDMTZGIiBzdHJva2Utd2lkdGg9IjYiLz4KPHJlY3QgeD0iMTgwIiB5PSIzNDAiIHdpZHRoPSIxNTIiIGhlaWdodD0iMTIiIHJ4PSI1IiBmaWxsPSIjQzlBMjRCIiBzdHJva2U9IiNBODdFMzMiIHN0cm9rZS13aWR0aD0iMiIvPgo8bGluZSB4MT0iMTg0LjAiIHkxPSIxODIiIHgyPSIxODQuMCIgeTI9IjM0MCIgc3Ryb2tlPSIjRTNDMTZGIiBzdHJva2Utd2lkdGg9IjIuNCIgb3BhY2l0eT0iMC45Ii8+CjxsaW5lIHgxPSIyMDAuMCIgeTE9IjE4MiIgeDI9IjIwMC4wIiB5Mj0iMzQwIiBzdHJva2U9IiNFM0MxNkYiIHN0cm9rZS13aWR0aD0iMi40IiBvcGFjaXR5PSIwLjkiLz4KPGxpbmUgeDE9IjIxNi4wIiB5MT0iMTgyIiB4Mj0iMjE2LjAiIHkyPSIzNDAiIHN0cm9rZT0iI0UzQzE2RiIgc3Ryb2tlLXdpZHRoPSIyLjQiIG9wYWNpdHk9IjAuOSIvPgo8bGluZSB4MT0iMjMyLjAiIHkxPSIxODIiIHgyPSIyMzIuMCIgeTI9IjM0MCIgc3Ryb2tlPSIjRTNDMTZGIiBzdHJva2Utd2lkdGg9IjIuNCIgb3BhY2l0eT0iMC45Ii8+CjxsaW5lIHgxPSIyNDguMCIgeTE9IjE4MiIgeDI9IjI0OC4wIiB5Mj0iMzQwIiBzdHJva2U9IiNFM0MxNkYiIHN0cm9rZS13aWR0aD0iMi40IiBvcGFjaXR5PSIwLjkiLz4KPGxpbmUgeDE9IjI2NC4wIiB5MT0iMTgyIiB4Mj0iMjY0LjAiIHkyPSIzNDAiIHN0cm9rZT0iI0UzQzE2RiIgc3Ryb2tlLXdpZHRoPSIyLjQiIG9wYWNpdHk9IjAuOSIvPgo8bGluZSB4MT0iMjgwLjAiIHkxPSIxODIiIHgyPSIyODAuMCIgeTI9IjM0MCIgc3Ryb2tlPSIjRTNDMTZGIiBzdHJva2Utd2lkdGg9IjIuNCIgb3BhY2l0eT0iMC45Ii8+CjxsaW5lIHgxPSIyOTYuMCIgeTE9IjE4MiIgeDI9IjI5Ni4wIiB5Mj0iMzQwIiBzdHJva2U9IiNFM0MxNkYiIHN0cm9rZS13aWR0aD0iMi40IiBvcGFjaXR5PSIwLjkiLz4KPGxpbmUgeDE9IjMxMi4wIiB5MT0iMTgyIiB4Mj0iMzEyLjAiIHkyPSIzNDAiIHN0cm9rZT0iI0UzQzE2RiIgc3Ryb2tlLXdpZHRoPSIyLjQiIG9wYWNpdHk9IjAuOSIvPgo8bGluZSB4MT0iMzI4LjAiIHkxPSIxODIiIHgyPSIzMjguMCIgeTI9IjM0MCIgc3Ryb2tlPSIjRTNDMTZGIiBzdHJva2Utd2lkdGg9IjIuNCIgb3BhY2l0eT0iMC45Ii8+CjxyZWN0IHg9IjE3OC4wIiB5PSIxNDYiIHdpZHRoPSIxMiIgaGVpZ2h0PSIzOCIgcng9IjUiIGZpbGw9IiNCODkyM0YiIHN0cm9rZT0iI0E4N0UzMyIgc3Ryb2tlLXdpZHRoPSIxLjYiLz4KPHJlY3QgeD0iMjEwLjAiIHk9IjE0NiIgd2lkdGg9IjEyIiBoZWlnaHQ9IjM4IiByeD0iNSIgZmlsbD0iI0I4OTIzRiIgc3Ryb2tlPSIjQTg3RTMzIiBzdHJva2Utd2lkdGg9IjEuNiIvPgo8cmVjdCB4PSIyNDIuMCIgeT0iMTQ2IiB3aWR0aD0iMTIiIGhlaWdodD0iMzgiIHJ4PSI1IiBmaWxsPSIjQjg5MjNGIiBzdHJva2U9IiNBODdFMzMiIHN0cm9rZS13aWR0aD0iMS42Ii8+CjxyZWN0IHg9IjI3NC4wIiB5PSIxNDYiIHdpZHRoPSIxMiIgaGVpZ2h0PSIzOCIgcng9IjUiIGZpbGw9IiNCODkyM0YiIHN0cm9rZT0iI0E4N0UzMyIgc3Ryb2tlLXdpZHRoPSIxLjYiLz4KPHJlY3QgeD0iMzA2LjAiIHk9IjE0NiIgd2lkdGg9IjEyIiBoZWlnaHQ9IjM4IiByeD0iNSIgZmlsbD0iI0I4OTIzRiIgc3Ryb2tlPSIjQTg3RTMzIiBzdHJva2Utd2lkdGg9IjEuNiIvPgo8L2c+CjxjaXJjbGUgY3g9IjI1NiIgY3k9IjI1NiIgcj0iMjQzIiBmaWxsPSJub25lIiBzdHJva2U9InVybCgjcmluZ2cpIiBzdHJva2Utd2lkdGg9IjExIi8+CjxjaXJjbGUgY3g9IjI1NiIgY3k9IjI1NiIgcj0iMjMxIiBmaWxsPSJub25lIiBzdHJva2U9IiNFM0MxNkYiIHN0cm9rZS13aWR0aD0iMiIgb3BhY2l0eT0iMC40NSIvPgo8L3N2Zz4=";
+window.__logo = LOGO;
+window.__defaultArt = '<img class="logoart" alt="" src="' + LOGO + '">';
+document.getElementById('brandLogo').src = LOGO;
+document.getElementById('art').innerHTML = window.__defaultArt;
+
+/* ---- safe storage (persistent w/ in-memory fallback) ---- */
+const store=(()=>{let m={},ok=false;try{const k='__t';localStorage.setItem(k,'1');localStorage.removeItem(k);ok=true}catch(e){}
+return{get(k,f=null){try{const v=ok?localStorage.getItem(k):(k in m?m[k]:null);return v==null?f:JSON.parse(v)}catch(e){return f}},
+set(k,v){const s=JSON.stringify(v);try{ok?localStorage.setItem(k,s):(m[k]=s)}catch(e){m[k]=s}}}})();
+
+/* ---- theme ---- */
+(function(){const saved=store.get('theme');const sysDark=matchMedia('(prefers-color-scheme: dark)').matches;
+const apply=t=>{document.documentElement.dataset.theme=t;document.getElementById('themeBtn').textContent=t==='dark'?'☾':'☀';};
+apply(saved||(sysDark?'dark':'light'));
+window.toggleTheme=()=>{const n=document.documentElement.dataset.theme==='dark'?'light':'dark';apply(n);store.set('theme',n)};})();
+
+/* ---- language ---- */
+let lang = store.get('lang','en');
+function applyLang(){
+  document.documentElement.lang = lang;
+  document.querySelectorAll('[data-en]').forEach(el=>{
+    const txt = el.getAttribute('data-'+lang);
+    if(txt!=null) el.textContent = txt;
+    el.classList.toggle('am', lang==='am');
+  });
+  document.querySelectorAll('[data-en-ph]').forEach(el=>{ const t=el.getAttribute('data-'+lang+'-ph'); if(t!=null) el.placeholder=t; });
+  document.getElementById('langBtn').textContent = lang==='en' ? 'አማ' : 'EN';
+  store.set('lang',lang);
+  render(last); // re-render dynamic strings (also refreshes Up Next)
+  const tz=$('tzName'); if(tz&&!TZ) tz.textContent=(lang==='en'?'your device time':'የመሣሪያዎ ሰዓት');
+  const sv=$('scheduleView'); if(sv&&!sv.hidden) renderSchedule();
+  if(typeof renderVerse==='function') renderVerse();
+  if(typeof buildGiveChips==='function') buildGiveChips();
+  if(document.body.classList.contains('cal-open')) renderWeek();
+}
+document.getElementById('langBtn').onclick=()=>{lang = lang==='en'?'am':'en';applyLang();};
+
+/* ---- helpers ---- */
+const $=id=>document.getElementById(id);
+const fmt=s=>{s=Math.max(0,Math.floor(s||0));return Math.floor(s/60)+':'+String(s%60).padStart(2,'0');};
+const hasEth=s=>/[\u1200-\u137F]/.test(s||''); // Ge'ez range → use Ethiopic font
+
+const crossSVG='<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round"><path d="M50 14V86M14 50H86"/><path d="M50 32l14 18-14 18-14-18z"/></svg>';
+
+/* ---- audio + playback ---- */
+const audio=$('audio');
+audio.volume = store.get('vol',0.5);
+$('vol').value = audio.volume;
+$('vol').oninput=e=>{audio.volume=+e.target.value;store.set('vol',audio.volume);};
+
+let playing=false;
+function setPlayIcon(state){ // 'play' | 'pause' | 'loading'
+  const btn=$('playBtn'), icon=$('playIcon');
+  btn.classList.toggle('loading',state==='loading');
+  btn.classList.toggle('is-pause',state==='pause');
+  if(state==='pause'){icon.innerHTML='<path d="M6 5h4v14H6zM14 5h4v14h-4z"/>';btn.setAttribute('aria-label','Pause');}
+  else if(state==='play'){icon.innerHTML='<path d="M8 5v14l11-7z"/>';btn.setAttribute('aria-label','Play');}
+}
+function streamUrl(){ return CONFIG.STREAM_URL || (last && last.listen_url) || (CONFIG.AZURACAST.replace(/\/$/,'')+'/listen/'+CONFIG.STATION+'/radio.mp3'); }
+
+let starting=false;
+function demoPlay(on){ playing=on; document.body.classList.toggle('is-playing',on); setPlayIcon(on?'pause':'play'); setLive(); updateWave(); }
+async function startStream(){
+  if(DEMO){ demoPlay(true); return; }
+  if(starting||playing) return;
+  starting=true; setPlayIcon('loading');
+  try{ audio.src = streamUrl(); audio.load(); await audio.play(); }
+  catch(e){ setPlayIcon('play'); }
+  finally{ starting=false; }
+}
+$('playBtn').onclick=()=>{
+  if(DEMO){ demoPlay(!playing); return; }
+  if(playing){ audio.pause(); return; }
+  startStream();
+};
+// Begin playback as soon as the page loads. Browsers block autoplay-with-sound
+// until the listener interacts, so if the first attempt is refused we start on
+// the very first tap, click, or keypress anywhere on the page.
+function armFirstGesture(){
+  const go=()=>{ document.removeEventListener('pointerdown',go,true); document.removeEventListener('keydown',go,true); if(!playing) startStream(); };
+  document.addEventListener('pointerdown',go,true);
+  document.addEventListener('keydown',go,true);
+}
+function autostart(){ if(DEMO){ demoPlay(true); } else { startStream(); armFirstGesture(); } }
+audio.addEventListener('playing',()=>{playing=true;document.body.classList.add('is-playing');setPlayIcon('pause');setLive();updateWave();});
+audio.addEventListener('pause',()=>{playing=false;document.body.classList.remove('is-playing');setPlayIcon('play');setLive();updateWave();});
+audio.addEventListener('waiting',()=>setPlayIcon('loading'));
+audio.addEventListener('error',()=>{setPlayIcon('play');});
+
+function setLive(){
+  const el=$('liveLabel');
+  if(last && last.is_live){ el.setAttribute('data-en','Live: '+(last.streamer||'On air')); el.setAttribute('data-am','ቀጥታ ስርጭት'); }
+  else if(playing){ el.setAttribute('data-en','On air'); el.setAttribute('data-am','በስርጭት ላይ'); }
+  else { el.setAttribute('data-en','Off air'); el.setAttribute('data-am','ዝግ ነው'); }
+  el.textContent = el.getAttribute('data-'+lang);
+}
+
+/* ---- panel tabs (Up Next / Schedule) ---- */
+const PANEL_VIEWS={upnext:'upnextView',schedule:'scheduleView',pray:'prayView',give:'giveView'};
+const PANEL_TABS ={upnext:'tabUpnext',schedule:'tabSchedule',pray:'tabPray',give:'tabGive'};
+function showTab(which){
+  Object.keys(PANEL_VIEWS).forEach(k=>{
+    $(PANEL_VIEWS[k]).hidden = (k!==which);
+    $(PANEL_TABS[k]).classList.toggle('active', k===which);
+  });
+  if(which==='schedule') renderSchedule();
+}
+Object.keys(PANEL_TABS).forEach(k=>{ $(PANEL_TABS[k]).onclick=()=>showTab(k); });
+
+/* ---- viewer's local timezone + time helpers ---- */
+const TZ=(()=>{try{return Intl.DateTimeFormat().resolvedOptions().timeZone||''}catch(e){return ''}})();
+$('tzName').textContent = TZ ? TZ.replace(/_/g,' ') : (lang==='en'?'your device time':'የመሣሪያዎ ሰዓት');
+const fmtTime=ts=>{try{return new Date(ts*1000).toLocaleTimeString(undefined,{hour:'numeric',minute:'2-digit'})}catch(e){return ''}};
+const _dk=ts=>{const d=new Date(ts*1000);return d.getFullYear()+'-'+d.getMonth()+'-'+d.getDate();};
+function dayLabel(ts){
+  const d=new Date(ts*1000), n=new Date(), tom=new Date(); tom.setDate(n.getDate()+1);
+  if(_dk(ts)===_dk(n.getTime()/1000)) return lang==='en'?'Today':'ዛሬ';
+  if(_dk(ts)===_dk(tom.getTime()/1000)) return lang==='en'?'Tomorrow':'ነገ';
+  try{return d.toLocaleDateString(undefined,{weekday:'long',month:'short',day:'numeric'});}catch(e){return '';}
+}
+
+/* ---- Up Next (single track from AzuraCast playing_next) ---- */
+function renderUpnext(d){
+  const ul=$('upnextList'); if(!ul) return; ul.innerHTML='';
+  const items=(d&&d.upcoming)||[];
+  if(!items.length){
+    const li=document.createElement('li'); li.style.borderBottom='none';
+    li.innerHTML='<div class="empty">'+(lang==='en'
+      ? 'Continuous worship — the next song is chosen automatically.'
+      : 'ቀጣይነት ያለው ምስጋና — ቀጣዩ ዝማሬ በራስ-ሰር ይመረጣል።')+'</div>';
+    ul.appendChild(li); return;
+  }
+  items.slice(0,5).forEach(s=>{
+    const li=document.createElement('li');
+    const thumb=s.art?'<img class="rt" alt="" src="'+s.art+'">':'<span class="rt">'+crossSVG+'</span>';
+    li.innerHTML=thumb+'<div class="meta"><div class="t'+(hasEth(s.title)?' am':'')+'">'+esc(s.title)+
+      '</div><div class="a'+(hasEth(s.artist)?' am':'')+'">'+esc(s.artist||'')+'</div></div>';
+    ul.appendChild(li);
+  });
+}
+
+/* ---- Schedule (AzuraCast public schedule endpoint) ---- */
+let scheduleData=null;
+async function loadSchedule(){
+  if(DEMO){ scheduleData=demoSchedule(); if(!$('scheduleView').hidden) renderSchedule(); return; }
+  try{
+    const url=CONFIG.AZURACAST.replace(/\/$/,'')+'/api/station/'+encodeURIComponent(CONFIG.STATION)+'/schedule';
+    const r=await fetch(url,{cache:'no-store'}); const j=await r.json();
+    scheduleData=(Array.isArray(j)?j:[]).map(e=>({
+      start:e.start_timestamp, end:e.end_timestamp,
+      name:e.title||e.name||'', desc:e.description||'', isNow:!!e.is_now
+    })).filter(e=>e.start);
+  }catch(e){ if(scheduleData==null) scheduleData=[]; }
+  if(!$('scheduleView').hidden) renderSchedule();
+}
+function renderSchedule(){
+  const box=$('scheduleList'); if(!box) return; box.innerHTML='';
+  if(scheduleData==null){ box.innerHTML='<div class="empty">'+(lang==='en'?'Loading schedule…':'የጊዜ ሰሌዳ በመጫን ላይ…')+'</div>'; return; }
+  const now=Date.now()/1000;
+  const evs=scheduleData.filter(e=>(e.end||e.start)>=now).sort((a,b)=>a.start-b.start).slice(0,14);
+  if(!evs.length){ box.innerHTML='<div class="empty">'+(lang==='en'
+      ? 'Continuous 24/7 worship — no scheduled programs right now.'
+      : '24/7 ቀጣይነት ያለው ምስጋና — በአሁኑ ጊዜ የተያዘ ፕሮግራም የለም።')+'</div>'; return; }
+  let curDay='';
+  evs.forEach(e=>{
+    const dk=_dk(e.start);
+    if(dk!==curDay){ curDay=dk; const hd=document.createElement('div'); hd.className='sched-day'; hd.textContent=dayLabel(e.start); box.appendChild(hd); }
+    const row=document.createElement('div'); row.className='sched'+(e.isNow?' now':'');
+    const badge=e.isNow?'<span class="badge">'+(lang==='en'?'On now':'አሁን')+'</span>':'';
+    row.innerHTML='<div class="when">'+fmtTime(e.start)+'</div>'+
+      '<div class="what"><div class="n'+(hasEth(e.name)?' am':'')+'">'+esc(e.name)+badge+'</div>'+
+      (e.desc?'<div class="d'+(hasEth(e.desc)?' am':'')+'">'+esc(e.desc)+'</div>':'')+'</div>';
+    box.appendChild(row);
+  });
+}
+function demoSchedule(){
+  const now=new Date();
+  const mk=(addH,dur,name,desc)=>{const s=new Date(now); s.setMinutes(0,0,0); s.setHours(s.getHours()+addH);
+    const st=Math.floor(s.getTime()/1000); return {start:st,end:st+dur*3600,name,desc,isNow:false};};
+  const list=[
+    mk(-1,2,'የጠዋት ምስጋና','Morning praise & worship'),
+    mk(1,3,'Mezmur Mix','Contemporary Ethiopian gospel'),
+    mk(4,2,'የመዝሙር ሰዓት','Traditional hymns'),
+    mk(6,2,'Word & Worship','Teaching and testimony'),
+    mk(9,3,'Begena Hour','Sacred lyre & meditation'),
+    mk(22,3,'የሌሊት ጸሎት','Overnight prayer'),
+    mk(26,2,'የጠዋት ምስጋና','Morning praise & worship'),
+    mk(28,3,'Mezmur Mix','Contemporary Ethiopian gospel'),
+  ];
+  const t=Date.now()/1000; list.forEach(e=>{ if(t>=e.start&&t<e.end) e.isNow=true; });
+  return list;
+}
+
+/* ---- render now-playing ---- */
+let last=null;
+function render(d){
+  if(!d) return;
+  const t=$('title'), a=$('artist'), al=$('album');
+  t.textContent = d.title || (lang==='en'?'Begena Radio':'በገና ሬዲዮ');
+  t.classList.toggle('am', hasEth(d.title));
+  a.textContent = d.artist || '';
+  a.classList.toggle('am', hasEth(d.artist));
+  al.textContent = d.album || '';
+  al.classList.toggle('am', hasEth(d.album));
+
+  const art=$('art');
+  if(d.art){ art.innerHTML='<img alt="" src="'+d.art+'" onerror="this.parentNode.innerHTML=window.__defaultArt">'; }
+  else if(!art.querySelector('.logoart')){ art.innerHTML=window.__defaultArt; }
+
+  const hasProg = d.duration>0;
+  $('barWrap').hidden=!hasProg; $('times').hidden=!hasProg;
+  if(hasProg){
+    $('barFill').style.width=Math.min(100,(d.elapsed/d.duration*100))+'%';
+    $('tElapsed').textContent=fmt(d.elapsed); $('tDur').textContent=fmt(d.duration);
+  }
+
+  $('listeners').hidden = d.listeners==null;
+  if(d.listeners!=null) $('listenCount').textContent=d.listeners;
+
+  // up next
+  renderUpnext(d);
+  setLive();
+}
+function esc(s){return (s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
+window.__cross='<div class="cross">'+crossSVG+'</div>';
+
+/* ---- AzuraCast polling ---- */
+async function poll(){
+  if(DEMO){ demoTick(); return; }
+  try{
+    const url=CONFIG.AZURACAST.replace(/\/$/,'')+'/api/nowplaying/'+encodeURIComponent(CONFIG.STATION);
+    const r=await fetch(url,{cache:'no-store'}); const j=await r.json();
+    const s=Array.isArray(j)?j[0]:j;
+    const np=s.now_playing||{}, song=np.song||{};
+    last={
+      title:song.title, artist:song.artist, album:song.album, art:song.art,
+      elapsed:np.elapsed, duration:np.duration,
+      listeners:(s.listeners&&s.listeners.current)??null,
+      is_live:s.live&&s.live.is_live, streamer:s.live&&s.live.streamer_name,
+      listen_url:s.station&&s.station.listen_url,
+      upcoming:(s.playing_next&&s.playing_next.song)
+        ? [{title:s.playing_next.song.title,artist:s.playing_next.song.artist,art:s.playing_next.song.art}]
+        : []
+    };
+    render(last);
+  }catch(e){ /* keep last good state */ }
+}
+
+/* ---- demo data so the design is alive without a server ---- */
+const demoSongs=[
+  {title:'እግዚአብሔር ቸር ነው',artist:'የክብር ዝማሬ ቡድን',album:'ምስጋና',duration:243},
+  {title:'አመሰግናለሁ',artist:'Selam Tesfaye',album:'Grace',duration:218},
+  {title:'መድሃኒቴ ነህ',artist:'መዘምራን ጉባኤ',album:'ተስፋ',duration:265},
+  {title:'Holy Spirit',artist:'Dawit G.',album:'Living Water',duration:201},
+  {title:'ናፍቆት',artist:'Hanna Tekle',album:'መንፈሳዊ',duration:230},
+];
+let di=0, dstart=Date.now();
+function demoTick(){
+  const cur=demoSongs[di%demoSongs.length];
+  const elapsed=(Date.now()-dstart)/1000;
+  if(elapsed>=cur.duration){ di++; dstart=Date.now(); }
+  const up=[demoSongs[(di+1)%demoSongs.length]];
+  last={...cur, elapsed:Math.min(elapsed,cur.duration), listeners:37+ (di%9),
+        is_live:false, listen_url:'', upcoming:up};
+  render(last);
+}
+
+/* ---- circular wave visualizer behind the play button ---- */
+(function(){
+  const cv=document.getElementById('waveCanvas'); if(!cv||!cv.getContext){window.startWave=window.stopWave=function(){};return;}
+  const ctx=cv.getContext('2d');
+  const DPR=Math.min(2,window.devicePixelRatio||1);
+  const CSS=190; cv.width=CSS*DPR; cv.height=CSS*DPR;
+  const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const GOLD='#E3C16F';
+  let raf=null;
+  function draw(t){
+    const w=cv.width,h=cv.height,cx=w/2,cy=h/2,dpr=DPR,tt=t/1000;
+    const theme=document.documentElement.dataset.theme;
+    ctx.clearRect(0,0,w,h);
+    // expanding radial ripples (staggered, fading outward)
+    const RINGS=3;
+    ctx.shadowColor=GOLD; ctx.shadowBlur=6*dpr;
+    for(let k=0;k<RINGS;k++){
+      const pr=((tt*0.5)+k/RINGS)%1;
+      const rr=(44+pr*46)*dpr;
+      const al=Math.sin(pr*Math.PI)*0.32*(theme==='light'?0.85:1); // fade in then out
+      ctx.beginPath(); ctx.arc(cx,cy,rr,0,Math.PI*2);
+      ctx.globalAlpha=al; ctx.lineWidth=1.8*dpr; ctx.strokeStyle=GOLD; ctx.stroke();
+    }
+    ctx.globalAlpha=1; ctx.shadowBlur=0;
+  }
+  function frame(ts){ draw(ts); raf=requestAnimationFrame(frame); }
+  function ring(){ // faint resting ring (paused / reduced-motion)
+    const w=cv.width,h=cv.height,dpr=DPR;
+    ctx.clearRect(0,0,w,h);
+    ctx.beginPath(); ctx.arc(w/2,h/2,52*dpr,0,Math.PI*2);
+    ctx.strokeStyle=GOLD; ctx.globalAlpha=0.22; ctx.lineWidth=2*dpr; ctx.stroke(); ctx.globalAlpha=1;
+  }
+  window.startWave=function(){ if(reduced){ring();return;} if(raf==null) raf=requestAnimationFrame(frame); };
+  window.stopWave =function(){ if(raf!=null){cancelAnimationFrame(raf);raf=null;} ring(); };
+  document.addEventListener('visibilitychange',()=>{
+    if(document.hidden){ if(raf!=null){cancelAnimationFrame(raf);raf=null;} }
+    else if(document.body.classList.contains('is-playing')&&raf==null&&!reduced){ raf=requestAnimationFrame(frame); }
+  });
+  ring();
+})();
+function updateWave(){ document.body.classList.contains('is-playing')?startWave():stopWave(); }
+
+/* ---- Verse of the Day (bilingual, rotates daily, fully offline) ----
+   English = King James Version (public domain). Amharic = standard
+   translation; review against your preferred edition and add more freely. */
+const VERSES=[
+  {ref_en:'Psalm 150:6',ref_am:'መዝሙር 150፥6',
+   en:'Let every thing that hath breath praise the LORD. Praise ye the LORD.',
+   am:'ሕይወት ያለው ሁሉ እግዚአብሔርን ያመስግን፤ ሃሌ ሉያ።'},
+  {ref_en:'Psalm 23:1',ref_am:'መዝሙር 23፥1',
+   en:'The LORD is my shepherd; I shall not want.',
+   am:'እግዚአብሔር እረኛዬ ነው፤ የሚያሳጣኝ የለም።'},
+  {ref_en:'John 3:16',ref_am:'ዮሐንስ 3፥16',
+   en:'For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.',
+   am:'በእርሱ የሚያምን ሁሉ የዘላለም ሕይወት እንዲኖረው እንጂ እንዳይጠፋ እግዚአብሔር አንድያ ልጁን እስኪሰጥ ድረስ ዓለሙን እንዲሁ ወዶአልና።'},
+  {ref_en:'Philippians 4:13',ref_am:'ፊልጵስዩስ 4፥13',
+   en:'I can do all things through Christ which strengtheneth me.',
+   am:'ኃይልን በሚሰጠኝ በክርስቶስ ሁሉን እችላለሁ።'},
+  {ref_en:'Psalm 46:1',ref_am:'መዝሙር 46፥1',
+   en:'God is our refuge and strength, a very present help in trouble.',
+   am:'እግዚአብሔር መጠጊያችንና ኃይላችን ነው፥ በመከራም ጊዜ እጅግ የተገኘ ረዳት ነው።'},
+  {ref_en:'Isaiah 40:31',ref_am:'ኢሳይያስ 40፥31',
+   en:'But they that wait upon the LORD shall renew their strength; they shall mount up with wings as eagles.',
+   am:'እግዚአብሔርን በመተማመን የሚጠባበቁ ግን ኃይላቸውን ያድሳሉ፤ እንደ ንስር በክንፍ ይወጣሉ።'},
+  {ref_en:'Proverbs 3:5',ref_am:'ምሳሌ 3፥5',
+   en:'Trust in the LORD with all thine heart; and lean not unto thine own understanding.',
+   am:'በፍጹም ልብህ በእግዚአብሔር ታመን፥ በራስህም ማስተዋል አትደገፍ።'},
+  {ref_en:'Psalm 118:24',ref_am:'መዝሙር 118፥24',
+   en:'This is the day which the LORD hath made; we will rejoice and be glad in it.',
+   am:'እግዚአብሔር የሠራት ቀን ይህች ናት፤ ሐሤት እናድርግ በእርስዋም ደስ ይበለን።'},
+  {ref_en:'Matthew 11:28',ref_am:'ማቴዎስ 11፥28',
+   en:'Come unto me, all ye that labour and are heavy laden, and I will give you rest.',
+   am:'እናንተ ደካሞች ሸክማችሁ የከበደ ሁሉ፥ ወደ እኔ ኑ፥ እኔም አሳርፋችኋለሁ።'},
+  {ref_en:'Joshua 1:9',ref_am:'ኢያሱ 1፥9',
+   en:'Be strong and of a good courage; be not afraid: for the LORD thy God is with thee whithersoever thou goest.',
+   am:'ጸንተህ በርታ፤ አትፍራ አትደንግጥም፤ በምትሄድበት ሁሉ አምላክህ እግዚአብሔር ከአንተ ጋር ነውና።'},
+  {ref_en:'Psalm 27:1',ref_am:'መዝሙር 27፥1',
+   en:'The LORD is my light and my salvation; whom shall I fear?',
+   am:'እግዚአብሔር ብርሃኔና መድኃኒቴ ነው፤ የሚያስፈራኝ ማን ነው?'},
+  {ref_en:'Psalm 100:1-2',ref_am:'መዝሙር 100፥1-2',
+   en:'Make a joyful noise unto the LORD, all ye lands. Serve the LORD with gladness.',
+   am:'ምድር ሁሉ ሆይ፥ ለእግዚአብሔር እልል በሉ። እግዚአብሔርን በደስታ አምልኩ።'}
+];
+function dayOfYear(){ const n=new Date(), s=new Date(n.getFullYear(),0,0); return Math.floor((n-s)/86400000); }
+function renderVerse(){
+  const v=VERSES[dayOfYear()%VERSES.length], tx=$('verseText'), rf=$('verseRef'); if(!tx) return;
+  const am=lang==='am';
+  tx.textContent='\u201C'+(am?v.am:v.en)+'\u201D';
+  tx.classList.toggle('am',am);
+  rf.textContent=am?v.ref_am:v.ref_en;
+}
+
+/* ---- Prayer requests ---- */
+function showFormMsg(id,text,ok){ const m=$(id); if(!m) return; m.textContent=text; m.classList.toggle('ok',!!ok); }
+function clearPrayer(){ $('prayText').value=''; $('prayName').value=''; $('prayAnon').checked=false; }
+function openPrayerMail(name,anon,txt){
+  const subj=encodeURIComponent('Prayer Request \u2014 Begena Radio');
+  const body=encodeURIComponent((anon?'(Private request)':('From: '+(name||'Anonymous')))+'\n\n'+txt);
+  window.location.href='mailto:'+(CONFIG.PRAYER_EMAIL||'')+'?subject='+subj+'&body='+body;
+}
+function sendPrayer(){
+  const txt=$('prayText').value.trim();
+  if(!txt){ showFormMsg('prayMsg', lang==='en'?'Please write your request first.':'እባክዎ መጀመሪያ ጥያቄዎን ይጻፉ።', false); return; }
+  const name=$('prayName').value.trim(), anon=$('prayAnon').checked;
+  const thanks=lang==='en'?'Thank you. Your request has been received and will be lifted up in prayer.':'እናመሰግናለን። ጥያቄዎ ደርሶናል፤ በጸሎት ይታሰባል።';
+  if(CONFIG.PRAYER_ENDPOINT){
+    $('praySend').disabled=true; showFormMsg('prayMsg', lang==='en'?'Sending…':'በመላክ ላይ…', false);
+    fetch(CONFIG.PRAYER_ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({name:anon?'':name,private:anon,request:txt,station:'Begena Radio'})})
+      .then(r=>{ if(!r.ok) throw 0; clearPrayer(); showFormMsg('prayMsg',thanks,true); })
+      .catch(()=>{ openPrayerMail(name,anon,txt); })
+      .finally(()=>{ $('praySend').disabled=false; });
+  } else { openPrayerMail(name,anon,txt); clearPrayer(); showFormMsg('prayMsg',thanks,true); }
+}
+
+/* ---- Giving ---- */
+const GIVE_AMOUNTS=[10,25,50,100];
+let giveAmt=25;
+function buildGiveChips(){
+  const box=$('giveAmounts'); if(!box) return; box.innerHTML='';
+  GIVE_AMOUNTS.forEach(v=>{
+    const b=document.createElement('button'); b.type='button'; b.className='chip'+(v===giveAmt?' sel':'');
+    b.textContent='$'+v; b.onclick=()=>{ giveAmt=v; buildGiveChips(); };
+    box.appendChild(b);
+  });
+  const o=document.createElement('button'); o.type='button'; o.className='chip'+(giveAmt==='other'?' sel':'');
+  o.textContent=lang==='en'?'Other':'ሌላ'; o.onclick=()=>{ giveAmt='other'; buildGiveChips(); };
+  box.appendChild(o);
+}
+function give(){
+  if(!CONFIG.DONATE_URL){ showFormMsg('giveMsg', lang==='en'?'Giving link not set up yet (add DONATE_URL in the config).':'የልገሳ አገናኝ ገና አልተዘጋጀም።', false); return; }
+  let url=CONFIG.DONATE_URL;
+  if(giveAmt&&giveAmt!=='other'){ url+=(url.includes('?')?'&':'?')+'amount='+encodeURIComponent(giveAmt); }
+  window.open(url,'_blank','noopener');
+  showFormMsg('giveMsg', lang==='en'?'Thank you for your generosity. God bless you.':'ስለ ልግስናዎ እናመሰግናለን። እግዚአብሔር ይባርክዎ።', true);
+}
+
+$('praySend').onclick=sendPrayer;
+$('giveBtn').onclick=give;
+buildGiveChips();
+renderVerse();
+
+/* ---- This Week drawer (curated weekly schedule) ---- */
+const WK=[
+ {k:'Sun',en:'Sunday',am:'እሁድ',th:'The Lord’s Day',ty:'feast',p:[
+  [0,'12–5 AM','Night Watch','የሌሊት ጸሎት','Soaking worship and intercession.'],
+  [5,'5–6 AM','Morning Devotion','የጠዋት ጥሞና','A quiet time in the Word.'],
+  [6,'6–9 AM','Sunday Worship','የእሁድ አምልኮ','Praise toward the morning service.'],
+  [9,'9 AM–12 PM','The Sunday Message','የእሁድ ስብከት','A full sermon.'],
+  [12,'12–4 PM','Worship & the Word','አምልኮና ቃል','Worship with short teachings.'],
+  [16,'4–7 PM','Family Altar','የቤተሰብ መሠዊያ','Songs for the household.'],
+  [19,'7–10 PM','Sunday Evening Service','የእሁድ ማታ አገልግሎት','Evening worship.'],
+  [22,'10 PM–12 AM','Soaking Worship','የጥሞና አምልኮ','Rest in His presence.']]},
+ {k:'Mon',en:'Monday',am:'ሰኞ',th:'Faith for the Week',ty:'',p:[
+  [0,'12–5 AM','Night Watch','የሌሊት ጸሎት','Soaking worship and prayer.'],
+  [5,'5–6 AM','Morning Devotion','የጠዋት ጥሞና','A quiet time in the Word.'],
+  [6,'6–9 AM','Morning Praise','የጠዋት ምስጋና','Bright praise for the commute.'],
+  [9,'9 AM–12 PM','Faith Builders','እምነትን ማነጽ','Teaching to start the week.'],
+  [12,'12–4 PM','Praise Mix','የምስጋና ቅንብር','The broad daytime blend.'],
+  [16,'4–7 PM','Drive-Time Praise','የጉዞ ምስጋና','Songs for the ride home.'],
+  [19,'7–10 PM','The Teaching Hour','የትምህርት ሰዓት','A message, then worship.'],
+  [22,'10 PM–12 AM','Soaking Worship','የጥሞና አምልኮ','Gentle worship for the night.']]},
+ {k:'Tue',en:'Tuesday',am:'ማክሰኞ',th:'Word & Testimony',ty:'',p:[
+  [0,'12–5 AM','Night Watch','የሌሊት ጸሎት','Soaking worship and prayer.'],
+  [5,'5–6 AM','Morning Devotion','የጠዋት ጥሞና','A quiet time in the Word.'],
+  [6,'6–9 AM','Morning Praise','የጠዋት ምስጋና','Bright praise for the commute.'],
+  [9,'9 AM–12 PM','The Word Today','የዕለቱ ቃል','A devotional Bible study.'],
+  [12,'12–4 PM','Praise Mix','የምስጋና ቅንብር','The broad daytime blend.'],
+  [16,'4–7 PM','Drive-Time Praise','የጉዞ ምስጋና','Songs for the ride home.'],
+  [19,'7–10 PM','Testimony Night','የምስክርነት ሌሊት','Listener testimonies, with worship.'],
+  [22,'10 PM–12 AM','Soaking Worship','የጥሞና አምልኮ','Gentle worship for the night.']]},
+ {k:'Wed',en:'Wednesday',am:'ረቡዕ',th:'Midweek Service',ty:'service',p:[
+  [0,'12–5 AM','Night Watch','የሌሊት ጸሎት','Soaking worship and intercession.'],
+  [5,'5–6 AM','Morning Devotion','የጠዋት ጥሞና','A quiet time in the Word.'],
+  [6,'6–9 AM','Morning Praise','የጠዋት ምስጋና','Bright praise for the commute.'],
+  [9,'9 AM–12 PM','Praise Mix','የምስጋና ቅንብር','The broad daytime blend.'],
+  [12,'12–4 PM','Midday Prayer','የቀትር ጸሎት','Guided intercession and worship.'],
+  [16,'4–7 PM','Drive-Time Praise','የጉዞ ምስጋና','Songs for the ride home.'],
+  [19,'7–10 PM','Midweek Service','የረቡዕ ጉባኤ','The midweek gathering — live.'],
+  [22,'10 PM–12 AM','Soaking Worship','የጥሞና አምልኮ','Gentle worship for the night.']]},
+ {k:'Thu',en:'Thursday',am:'ሐሙስ',th:'New Song',ty:'',p:[
+  [0,'12–5 AM','Night Watch','የሌሊት ጸሎት','Soaking worship and prayer.'],
+  [5,'5–6 AM','Morning Devotion','የጠዋት ጥሞና','A quiet time in the Word.'],
+  [6,'6–9 AM','Morning Praise','የጠዋት ምስጋና','Bright praise for the commute.'],
+  [9,'9 AM–12 PM','Praise Mix','የምስጋና ቅንብር','The broad daytime blend.'],
+  [12,'12–4 PM','New Song','አዲስ መዝሙር','Fresh releases from cleared artists.'],
+  [16,'4–7 PM','Drive-Time Praise','የጉዞ ምስጋና','Songs for the ride home.'],
+  [19,'7–10 PM','Youth Worship Night','የወጣቶች አምልኮ','Contemporary praise, then requests.'],
+  [22,'10 PM–12 AM','Soaking Worship','የጥሞና አምልኮ','Gentle worship for the night.']]},
+ {k:'Fri',en:'Friday',am:'ዓርብ',th:'Prayer Vigil Night',ty:'vigil',p:[
+  [0,'12–5 AM','Night Watch','የሌሊት ጸሎት','Soaking worship and intercession.'],
+  [5,'5–6 AM','Morning Devotion','የጠዋት ጥሞና','A quiet time in the Word.'],
+  [6,'6–9 AM','Morning Praise','የጠዋት ምስጋና','Bright praise for the commute.'],
+  [9,'9 AM–12 PM','Praise Mix','የምስጋና ቅንብር','The broad daytime blend.'],
+  [12,'12–4 PM','Healing & Hope','ፈውስና ተስፋ','Songs and the Word on healing.'],
+  [16,'4–7 PM','Drive-Time Praise','የጉዞ ምስጋና','Songs for the ride home.'],
+  [19,'7–10 PM','Evening Worship','የማታ አምልኮ','Worship rising toward the vigil.'],
+  [22,'10 PM–5 AM','Friday Night Prayer Vigil','የዓርብ ሌሊት ጸሎት','The all-night vigil until dawn.']]},
+ {k:'Sat',en:'Saturday',am:'ቅዳሜ',th:'Family & Celebration',ty:'',p:[
+  [0,'12–5 AM','All-Night Prayer','ሙሉ ሌሊት ጸሎት','The Friday vigil continues till morning.'],
+  [5,'5–6 AM','Morning Devotion','የጠዋት ጥሞና','A quiet time in the Word.'],
+  [6,'6–9 AM','Morning Praise','የጠዋት ምስጋና','Bright praise to open the weekend.'],
+  [9,'9 AM–12 PM','Little Lights','የልጆች አምልኮ','Worship and Bible stories for kids.'],
+  [12,'12–4 PM','Celebration Songs','የደስታ መዝሙር','Joyful songs for wedding season.'],
+  [16,'4–7 PM','The Mailbag','የመልእክት ሳጥን','Your requests and dedications.'],
+  [19,'7–10 PM','Saturday Night Praise','የቅዳሜ ማታ ምስጋና','Lively, communal worship.'],
+  [22,'10 PM–12 AM','Soaking Worship','የጥሞና አምልኮ','Into the eve of the Lord’s Day.']]}
+];
+function badgeLabel(ty){const am=lang==='am';
+  return ty==='feast'?(am?'የጌታ ቀን':'Lord’s Day'):ty==='vigil'?(am?'የጸሎት ሌሊት':'Vigil'):ty==='service'?(am?'ረቡዕ':'Midweek'):'';}
+function renderWeek(){
+  const box=$('calBody'); if(!box) return;
+  let html='';
+  WK.forEach(d=>{
+    const badge=d.ty?`<span class="cal-badge ${d.ty}">${badgeLabel(d.ty)}</span>`:'';
+    let rows='';
+    d.p.forEach(p=>{ rows+=`<div class="cal-row" data-h="${p[0]}">
+        <div class="rt">${p[1]}</div>
+        <div><div class="rp">${esc(p[2])}<span class="live">On air</span><span class="am">${esc(p[3])}</span></div>
+        <div class="rd">${esc(p[4])}</div></div></div>`; });
+    html+=`<section class="cal-day ${d.ty==='feast'?'feast':''}" data-day="${d.k}">
+      <div class="cal-dh"><span class="dn">${esc(d.en)}<span class="am">${esc(d.am)}</span></span>${badge}<span class="dt">${esc(d.th)}</span></div>
+      ${rows}</section>`;
+  });
+  box.innerHTML=html;
+  markWeekNow();
+}
+function markWeekNow(){
+  try{
+    const f=new Intl.DateTimeFormat('en-US',{timeZone:'America/New_York',weekday:'short',hour:'numeric',hour12:false});
+    const pr=Object.fromEntries(f.formatToParts(new Date()).map(x=>[x.type,x.value]));
+    let H=parseInt(pr.hour,10); if(H===24)H=0; const wd=pr.weekday;
+    document.querySelectorAll('.cal-row.on-air').forEach(e=>e.classList.remove('on-air'));
+    document.querySelectorAll('.cal-day.today').forEach(e=>e.classList.remove('today'));
+    const day=document.querySelector(`.cal-day[data-day="${wd}"]`); if(!day) return;
+    day.classList.add('today');
+    let best=null,bh=-1; day.querySelectorAll('.cal-row').forEach(r=>{const hh=+r.dataset.h; if(hh<=H&&hh>bh){bh=hh;best=r;}});
+    if(!best){const all=day.querySelectorAll('.cal-row'); best=all[all.length-1];}
+    if(best){ best.classList.add('on-air'); }
+  }catch(e){}
+}
+let calPrevFocus=null;
+function openCal(){ renderWeek(); document.body.classList.add('cal-open'); $('calDrawer').setAttribute('aria-hidden','false');
+  calPrevFocus=document.activeElement; setTimeout(()=>$('calClose').focus(),60);
+  const t=document.querySelector('.cal-day.today'); if(t) setTimeout(()=>t.scrollIntoView({block:'start',behavior:'auto'}),80); }
+function closeCal(){ document.body.classList.remove('cal-open'); $('calDrawer').setAttribute('aria-hidden','true');
+  if(calPrevFocus&&calPrevFocus.focus) calPrevFocus.focus(); }
+$('calBtn').onclick=openCal;
+$('calClose').onclick=closeCal;
+$('calScrim').onclick=closeCal;
+document.addEventListener('keydown',e=>{ if(e.key==='Escape'&&document.body.classList.contains('cal-open')) closeCal(); });
+setInterval(()=>{ if(document.body.classList.contains('cal-open')) markWeekNow(); }, 60000);
+
+/* ---- boot ---- */
+applyLang();
+if(DEMO){ $('setupNotice').hidden=false; demoTick(); }
+autostart();   // start in play mode on load (first tap if the browser blocks autoplay)
+poll();
+loadSchedule();
+setInterval(poll, DEMO?1000:CONFIG.POLL_MS);
+setInterval(loadSchedule, 5*60*1000);
+// keep progress bar moving between polls
+setInterval(()=>{ if(last&&last.duration>0&&!DEMO){ last.elapsed=Math.min(last.duration,(last.elapsed||0)+1); render(last);} },1000);
+</script>
+<script>if('serviceWorker' in navigator) navigator.serviceWorker.register('/sw.js');</script>
+</body>
+</html>

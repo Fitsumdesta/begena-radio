@@ -1,0 +1,46 @@
+<svg viewBox="0 0 512 512" width="512" height="512" xmlns="http://www.w3.org/2000/svg">
+<defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="72%">
+      <stop offset="0%"  stop-color="#241d3d"/>
+      <stop offset="55%" stop-color="#161127"/>
+      <stop offset="100%" stop-color="#0c0917"/>
+    </radialGradient>
+    <linearGradient id="wood" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"  stop-color="#E9CC85"/>
+      <stop offset="100%" stop-color="#B98F3E"/>
+    </linearGradient>
+    <linearGradient id="ringg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%"  stop-color="#F2DDA0"/>
+      <stop offset="50%" stop-color="#C9A24B"/>
+      <stop offset="100%" stop-color="#8A6A2B"/>
+    </linearGradient>
+  </defs>
+<circle cx="256" cy="256" r="248" fill="url(#bg)"/>
+<g fill="none" stroke-linejoin="round" stroke-linecap="round">
+<path d="M 176 330 L 336 330 L 358 404 Q 360 412 352 412 L 160 412 Q 152 412 154 404 Z" fill="url(#wood)" stroke="#E3C16F" stroke-width="6"/>
+<path d="M 182 344 L 330 344" stroke="#A87E33" stroke-width="3" opacity="0.55"/>
+<circle cx="212" cy="378" r="9" fill="#0c0917" stroke="#C9A24B" stroke-width="3.5"/>
+<circle cx="300" cy="378" r="9" fill="#0c0917" stroke="#C9A24B" stroke-width="3.5"/>
+<path d="M 170 332 L 196 332 L 176 168 L 146 166 Z" fill="url(#wood)" stroke="#E3C16F" stroke-width="6"/>
+<path d="M 316 332 L 342 332 L 366 166 L 336 168 Z" fill="url(#wood)" stroke="#E3C16F" stroke-width="6"/>
+<rect x="130" y="150" width="252" height="30" rx="15" fill="url(#wood)" stroke="#E3C16F" stroke-width="6"/>
+<rect x="180" y="340" width="152" height="12" rx="5" fill="#C9A24B" stroke="#A87E33" stroke-width="2"/>
+<line x1="184.0" y1="182" x2="184.0" y2="340" stroke="#E3C16F" stroke-width="2.4" opacity="0.9"/>
+<line x1="200.0" y1="182" x2="200.0" y2="340" stroke="#E3C16F" stroke-width="2.4" opacity="0.9"/>
+<line x1="216.0" y1="182" x2="216.0" y2="340" stroke="#E3C16F" stroke-width="2.4" opacity="0.9"/>
+<line x1="232.0" y1="182" x2="232.0" y2="340" stroke="#E3C16F" stroke-width="2.4" opacity="0.9"/>
+<line x1="248.0" y1="182" x2="248.0" y2="340" stroke="#E3C16F" stroke-width="2.4" opacity="0.9"/>
+<line x1="264.0" y1="182" x2="264.0" y2="340" stroke="#E3C16F" stroke-width="2.4" opacity="0.9"/>
+<line x1="280.0" y1="182" x2="280.0" y2="340" stroke="#E3C16F" stroke-width="2.4" opacity="0.9"/>
+<line x1="296.0" y1="182" x2="296.0" y2="340" stroke="#E3C16F" stroke-width="2.4" opacity="0.9"/>
+<line x1="312.0" y1="182" x2="312.0" y2="340" stroke="#E3C16F" stroke-width="2.4" opacity="0.9"/>
+<line x1="328.0" y1="182" x2="328.0" y2="340" stroke="#E3C16F" stroke-width="2.4" opacity="0.9"/>
+<rect x="178.0" y="146" width="12" height="38" rx="5" fill="#B8923F" stroke="#A87E33" stroke-width="1.6"/>
+<rect x="210.0" y="146" width="12" height="38" rx="5" fill="#B8923F" stroke="#A87E33" stroke-width="1.6"/>
+<rect x="242.0" y="146" width="12" height="38" rx="5" fill="#B8923F" stroke="#A87E33" stroke-width="1.6"/>
+<rect x="274.0" y="146" width="12" height="38" rx="5" fill="#B8923F" stroke="#A87E33" stroke-width="1.6"/>
+<rect x="306.0" y="146" width="12" height="38" rx="5" fill="#B8923F" stroke="#A87E33" stroke-width="1.6"/>
+</g>
+<circle cx="256" cy="256" r="243" fill="none" stroke="url(#ringg)" stroke-width="11"/>
+<circle cx="256" cy="256" r="231" fill="none" stroke="#E3C16F" stroke-width="2" opacity="0.45"/>
+</svg>

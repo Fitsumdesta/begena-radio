@@ -1,0 +1,5 @@
+node_modules/
+.wrangler/
+generate-icons.mjs
+generate-favicon.mjs
+*.log

@@ -1,0 +1,14 @@
+{
+  "name": "Begena Radio — ቤግና ሬዲዮ",
+  "short_name": "Begena",
+  "description": "24/7 Ethiopian Pentecostal gospel for the Habesha diaspora in the DMV.",
+  "display": "standalone",
+  "background_color": "#14100B",
+  "theme_color": "#14100B",
+  "start_url": "/",
+  "icons": [
+    { "src": "assets/begena-logo.svg", "sizes": "any", "type": "image/svg+xml" },
+    { "src": "assets/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "assets/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}
