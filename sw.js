@@ -10,7 +10,7 @@ const SHELL = [
 ];
 
 const NEVER_CACHE = [
-  'radio.begena.fm',
+  'radio.begenaradio.com',
   '/api/',
   '/listen/',
   '.mp3',

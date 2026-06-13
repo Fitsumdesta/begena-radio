@@ -6,8 +6,8 @@
 
 | Layer | Domain | Host |
 |-------|--------|------|
-| Website (this repo) | `begena.fm` | Cloudflare Pages |
-| Stream server | `radio.begena.fm` | AzuraCast on Hetzner VPS |
+| Website (this repo) | `begenaradio.com` | Cloudflare Pages |
+| Stream server | `radio.begenaradio.com` | AzuraCast on Hetzner VPS |
 
 ## Deploy to Cloudflare Pages
 
