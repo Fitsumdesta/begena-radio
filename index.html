@@ -421,7 +421,7 @@ const CONFIG = {
   // If PRAYER_ENDPOINT is set we POST the request there; otherwise we open the
   // listener's email app addressed to PRAYER_EMAIL.
   PRAYER_EMAIL: "",        // e.g. "prayer@begena.fm"
-  PRAYER_ENDPOINT: "",     // optional POST URL (e.g. a Formspree form)
+  PRAYER_ENDPOINT: "https://begena-prayer.destafitsum8.workers.dev",
   // Your donation page: PayPal.me, Donorbox, GoFundMe, Stripe Payment Link, Zeffy, etc.
   DONATE_URL: ""           // e.g. "https://www.paypal.com/donate/?hosted_button_id=XXXX"
 };
@@ -961,5 +961,58 @@ setInterval(loadSchedule, 5*60*1000);
 setInterval(()=>{ if(last&&last.duration>0&&!DEMO){ last.elapsed=Math.min(last.duration,(last.elapsed||0)+1); render(last);} },1000);
 </script>
 <script>if('serviceWorker' in navigator) navigator.serviceWorker.register('/sw.js');</script>
+
+<!-- Turnstile invisible bot check for prayer form -->
+<div id="_twBox" style="display:none"></div>
+<script>
+window._twLoaded = function() {
+  window._twId = turnstile.render('#_twBox', {
+    sitekey: '0x4AAAAAADklHZIgBOwbP2PF',
+    size: 'invisible',
+    callback: function(token) { window._twToken = token; _twSubmit(); },
+    'error-callback': function() {
+      showFormMsg('prayMsg', lang === 'en' ? 'Bot check failed. Please try again.' : 'ማረጋገጫ አልተሳካም። እባክዎ እንደገና ይሞክሩ።', false);
+      $('praySend').disabled = false;
+    }
+  });
+};
+window._twSubmit = function() {
+  var txt = $('prayText').value.trim();
+  var name = $('prayName').value.trim();
+  var anon = $('prayAnon').checked;
+  var thanks = lang === 'en'
+    ? 'Thank you. Your request has been received and will be lifted up in prayer.'
+    : 'እናመሰግናለን። ጥያቄዎ ደርሶናል፤ በጸሎት ይታሰባል።';
+  fetch(CONFIG.PRAYER_ENDPOINT, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ name: anon ? '' : name, private: anon, request: txt, station: 'Begena Radio', turnstileToken: window._twToken })
+  })
+  .then(function(r) {
+    if (!r.ok) throw 0;
+    clearPrayer();
+    showFormMsg('prayMsg', thanks, true);
+  })
+  .catch(function() {
+    showFormMsg('prayMsg', lang === 'en' ? 'Could not send. Please try again.' : 'መላክ አልተቻለም። እንደገና ይሞክሩ።', false);
+  })
+  .finally(function() {
+    $('praySend').disabled = false;
+    window._twToken = null;
+    if (window._twId != null) turnstile.reset(window._twId);
+  });
+};
+// Override the player's praySend handler to go through Turnstile first
+$('praySend').onclick = function() {
+  var txt = $('prayText').value.trim();
+  if (!txt) { showFormMsg('prayMsg', lang === 'en' ? 'Please write your request first.' : 'እባክዎ መጀመሪያ ጥያቄዎን ይጻፉ።', false); return; }
+  $('praySend').disabled = true;
+  showFormMsg('prayMsg', lang === 'en' ? 'Sending…' : 'በመላክ ላይ…', false);
+  if (window._twToken) { _twSubmit(); }
+  else if (window._twId != null) { turnstile.execute(window._twId); }
+  else { showFormMsg('prayMsg', lang === 'en' ? 'Please wait a moment and try again.' : 'ትንሽ ቆይተው እንደገና ይሞክሩ።', false); $('praySend').disabled = false; }
+};
+</script>
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&onload=_twLoaded" async></script>
 </body>
 </html>
