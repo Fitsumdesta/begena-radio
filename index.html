@@ -268,6 +268,16 @@ body.cal-open .cal-drawer{transform:translateX(0)}
   *{animation:none!important;transition:none!important}
 }
 </style>
+<style>
+/* mobile: prevent halo overflow from triggering page shake */
+html{overflow-x:clip}
+body{overflow-x:clip}
+.halo{will-change:transform,opacity}
+.wave{will-change:transform}
+@media(max-width:768px){
+  body{background-attachment:scroll}
+}
+</style>
 </head>
 <body>
 
